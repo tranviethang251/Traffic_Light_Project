@@ -13,20 +13,16 @@ module Light_Counter
    output [pCount_width-1:0] cnt_out) ;
    //signal decleration 
    reg [pCount_width-1:0] count ; 
-   reg de_tick ; 
    wire tick ; 
    // body 
    always@(posedge clk or negedge rstb) begin 
      if(~rstb) count <= Load_Count ; 
      else if(en&sec_tick) count <= (ctr_load) ? Load_Count : count-1 ; 
    end 
-   // tick edge detection 
-   always@(posedge clk or negedge rstb) begin 
-     if(~rstb) de_tick <= 0 ; 
-     else de_tick <= tick ; 
-  end 
+  // check the counter equal to zero 
   assign tick = (count==0) ? 1 : 0 ; 
   // output  
   assign light_tick = tick&sec_tick ;
   assign cnt_out = count ; 
  endmodule 
+ 
