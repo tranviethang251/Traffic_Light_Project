@@ -77,10 +77,14 @@ High level block diagram is presented in this below:
 ---
 Low level blolck diagram of Traffic Light: 
 <p align="center">
-  <img src="Traffic_Light/Diagram_Picture/low_level_block.png" width="400">
+  <img src="Traffic_Light/Diagram_Picture/low_level_block.png" width="600">
 </p>
 ---
-
+The details of each block are illustrated below:
+<p align="center">
+  <img src="Traffic_Light/Diagram_Picture/low_level_block_discription.png" width="600">
+</p>
+---
 
 ## FSM Description
 
