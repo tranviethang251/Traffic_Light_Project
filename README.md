@@ -97,6 +97,7 @@ We also draw expected waveform which is represented below :
 ### Second Counter ( Clock Divider ) 
 
 The second Counter converts 50MHz of system clock in FPGA to 1Hz tick : 
+
 $$
 1\text{ Hz tick} = \frac{100\,MHz}{100,000,000}
 $$
