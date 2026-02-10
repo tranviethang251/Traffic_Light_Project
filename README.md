@@ -41,25 +41,27 @@ Traffic_Light/
 
 ## Design Architecture
 
-The system is divided into 4 main blocks:
+The system is divided into 5 main blocks:
 
 1. **Clock Divider**
 
    * Converts 50 MHz system clock → 1 Hz tick
 
-2. **Timer Counter**
+2. **Light Counter**
 
    * Counts duration of each traffic state
 
-3. **FSM Controller**
+3. **Light Controller**
 
    * Controls traffic signal transitions
 
-4. **Output Decoder**
+4. **7-segment Led BCD**
 
    * Drives traffic LEDs
-5. ** Driver for 74HC595**
-   * Control the IC74HC595 to display digit on 7-segment leds.
+   
+5. **Artithmetic Unit**
+
+   *Separate the tens and units digits.
 
 ## Block diagram
 block diagram availabe in: 
@@ -74,17 +76,24 @@ High level block diagram is presented in this below:
 <p align="center">
   <img src="Traffic_Light/Diagram_Picture/High_Level_Block_Discription.png" width="600">
 </p>
----
-Low level blolck diagram of Traffic Light: 
+
+Low level block diagram of Traffic Light: 
+
 <p align="center">
   <img src="Traffic_Light/Diagram_Picture/low_level_block.png" width="600">
-</p>
----
+</p>  
+
 The details of each block are illustrated below:
+
 <p align="center">
   <img src="Traffic_Light/Diagram_Picture/low_level_block_discription.png" width="600">
 </p>
----
+
+We also draw expected waveform which is represented below : 
+
+<p align="center">
+  <img src="Traffic_Light/wave/Expected_Waveform.png" width="600">
+</p>
 
 ## FSM Description
 
