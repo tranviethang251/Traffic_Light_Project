@@ -1,4 +1,3 @@
-# Traffic_Light_Project
 # FPGA Traffic Light Controller (Verilog | Basys 3 Artix-7)
 
 ## Overview
@@ -92,8 +91,16 @@ The details of each block are illustrated below:
 We also draw expected waveform which is represented below : 
 
 <p align="center">
-  <img src="Traffic_Light/wave/Expected_Waveform.png" width="600">
+  <img src="Traffic_Light/wave/Expected_Waveform.png" width="800">
 </p>
+
+### Second Counter ( Clock Divider ) 
+
+The second Counter converts 50MHz of system clock in FPGA to 1Hz tick : 
+$$
+1\text{ Hz tick} = \frac{100\,MHz}{100,000,000}
+$$
+
 
 ## FSM Description
 
