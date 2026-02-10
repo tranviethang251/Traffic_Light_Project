@@ -33,7 +33,7 @@ Traffic_Light/
 ## Hardware Platform
 
 * FPGA: Xilinx Artix-7 (Basys 3)
-* Clock: 100 MHz onboard oscillator
+* Clock: 50 MHz onboard oscillator
 * Outputs: LEDs simulate traffic lamps
 * Toolchain: Vivado + ModelSim
 
@@ -45,7 +45,7 @@ The system is divided into 4 main blocks:
 
 1. **Clock Divider**
 
-   * Converts 100 MHz system clock → 1 Hz tick
+   * Converts 50 MHz system clock → 1 Hz tick
 
 2. **Timer Counter**
 
@@ -58,6 +58,8 @@ The system is divided into 4 main blocks:
 4. **Output Decoder**
 
    * Drives traffic LEDs
+5. ** Driver for 74HC595**
+   * Control the IC74HC595 to display digit on 7-segment leds.
 
 Block diagram available in:
 
@@ -71,12 +73,6 @@ Block diagram available in:
 
 The controller follows a Moore FSM architecture.
 
-| State       | Traffic Direction  |
-| ----------- | ------------------ |
-| S_NS_GREEN  | North-South Green  |
-| S_NS_YELLOW | North-South Yellow |
-| S_EW_GREEN  | East-West Green    |
-| S_EW_YELLOW | East-West Yellow   |
 
 State transitions occur only when the hardware timer expires.
 
