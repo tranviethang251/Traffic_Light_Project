@@ -61,12 +61,12 @@ The system is divided into 4 main blocks:
 5. ** Driver for 74HC595**
    * Control the IC74HC595 to display digit on 7-segment leds.
 
-Block diagram available in:
-
+## Block diagram
+block diagram availabe in: 
 ```
 /Diagram_Picture
 ```
-
+![Block Diagram](Diagram_Picture/High_Level_Block.png)
 ---
 
 ## FSM Description
