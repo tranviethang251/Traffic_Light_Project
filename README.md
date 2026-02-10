@@ -105,10 +105,20 @@ $$
 Thus, we have that : 
 
 $$
-1 (second ) = \frac{1}{20\,ns} = 50,000,000\,T_{clock} 
+1 (second ) = \frac{1}{20 (ns)} = 50,000,000\cdot T_{clock} 
 $$
 
-A modulo-50,000,000 counter is implemented to generate a 1 Hz tick.
+A modulo-50,000,000 counter is implemented to generate a 1 Hz tick. Because the simulation for mod-50,000,000 takes a lot of time, we will use mod-100 counter to check our design. The block diagram of this counter is illustated below: 
+
+<p align="center">
+  <img src="Traffic_Light/Diagram_Picture/second_counter.png" width="400">
+</p>
+
+The architecture of the second counter is shown below:
+
+<p align="center">
+  <img src="Traffic_Light/Diagram_Picture/second_counter_details.png" width="600">
+</p>
 
 ## FSM Description
 
