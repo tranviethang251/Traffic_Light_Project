@@ -66,7 +66,9 @@ block diagram availabe in:
 ```
 /Diagram_Picture
 ```
-![Block Diagram](Traffic_Light/Diagram_Picture/High_Level_Block.png)
+<p align="center">
+  <img src="Traffic_Ligth/Diagram_Picture/High_Level_Block.png" width="600">
+</p>
 ---
 
 ## FSM Description
