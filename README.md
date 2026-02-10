@@ -208,6 +208,13 @@ Through this project I learned:
 * AXI interface (for SoC FPGA)
 
 ---
+## Demo Video
+<p align="center">
+  <a href="https://youtu.be/5_QmPrGeohA?si=5fdSRW5tt40ME-Mn">
+        <img src="https://img.youtube.com/vi/ABC123XYZ/maxresdefault.jpg" width="600">
+  </a>
+</p>
+
 
 ## Author
 
