@@ -68,13 +68,20 @@ block diagram availabe in:
 ```
 High level block diagram is presented in this below: 
 <p align="center">
-  <img src="Traffic_Light/Diagram_Picture/High_Level_Block.png" width="600">
+  <img src="Traffic_Light/Diagram_Picture/High_Level_Block.png" width="400">
 </p>
 ---
 <p align="center">
   <img src="Traffic_Light/Diagram_Picture/High_Level_Block_Discription.png" width="600">
 </p>
 ---
+Low level blolck diagram of Traffic Light: 
+<p align="center">
+  <img src="Traffic_Light/Diagram_Picture/low_level_block.png" width="400">
+</p>
+---
+
+
 ## FSM Description
 
 The controller follows a Moore FSM architecture.
