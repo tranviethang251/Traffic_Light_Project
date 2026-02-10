@@ -102,6 +102,13 @@ $$
 f_{clk} = 50 (MHz) \Longrightarrow T = 20 (ns) 
 $$
 
+Thus, we have that : 
+
+$$
+1 (second ) = \frac{1}{20,\ns} = 50,000,000 T_{clock} 
+$$
+
+A modulo-50,000,000 counter is implemented to generate a 1 Hz tick.
 
 ## FSM Description
 
