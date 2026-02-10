@@ -99,7 +99,7 @@ We also draw expected waveform which is represented below :
 The second Counter converts 50MHz of system clock in FPGA to 1Hz tick : 
 
 $$
-1\text{ Hz tick} = \frac{100\,MHz}{100,000,000}
+f_{clk} = 50 (MHz) \Longrightarrow T = 20 (ns) 
 $$
 
 
