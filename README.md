@@ -66,7 +66,7 @@ block diagram availabe in:
 ```
 /Diagram_Picture
 ```
-![Block Diagram](Diagram_Picture/High_Level_Block.png)
+![Block Diagram](Traffic_Light/Diagram_Picture/High_Level_Block.png)
 ---
 
 ## FSM Description
