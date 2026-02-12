@@ -120,6 +120,23 @@ The architecture of the second counter is shown below:
   <img src="Traffic_Light/Diagram_Picture/second_counter_details.png" width="600">
 </p>
 
+### Light Counter 
+
+<p align="center">
+  <img src="Traffic_Light/Diagram_Picture/light_counter.png" width="400">
+</p>
+During each state transition, load_cnt_val is reloaded to match the duration of the next traffic light state. The architecture of this block is presented below: 
+<p align="center">
+  <img src="Traffic_Light/Diagram_Picture/arch_light_counter.png" width="600">
+</p>
+
+### Arithematic Unit
+
+To drive the 7-segment display, the value is split into tens and units digits. Although division operators exist in Verilog, the modulo operation is not efficiently synthesizable in hardware. Here we will try to build a hardware that can seperate these parts, one noticeable points is that this hardawre is used for a counter couting from 0 to 19. We also give another solution to seperate unit and ten digit instead of using this block which is represented in second version. 
+<p align="center">
+  <img src="Traffic_Light/Diagram_Picture/arch_arithmetic_unit.png" width="400">
+</p>
+
 ## FSM Description
 
 The controller follows a Moore FSM architecture.
